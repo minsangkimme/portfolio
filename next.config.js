@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: process.env.NODE_ENV === 'production' ? 'export' : '',
   webpack: (config, { isServer }) => {
     config.module.rules.push({
       test: /\.svg$/,
