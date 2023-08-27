@@ -106,17 +106,10 @@ export default function Home() {
       </header>
       <Account/>
       <div
-        className={"w-full"}
-        style={{
-          backgroundImage: `url('/image/background/round-purple.png')`,
-          backgroundSize: '450px',
-          backgroundRepeat: 'no-repeat',
-          backgroundPositionX: 'center',
-          backgroundPositionY: 'center',
-          padding: '50px 0'
-      }}
+        className={clsx("w-full", style.mainHeadingWrapper)}
+        style={{backgroundImage: `url('/image/background/round-purple.png')`}}
       >
-        <h1 className={style.heading}>
+        <h1 className={style.mainHeading}>
           Frontend? <br/>
           Loren Lee!
         </h1>
