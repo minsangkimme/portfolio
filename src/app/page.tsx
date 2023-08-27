@@ -25,7 +25,7 @@ const work = [
     title: 'Real estate trading platform',
     completed: '2023',
     type: 'Platform',
-    usingSkills: 'Vue, Typescript, JS, HTML, SCSS',
+    usingSkills: 'Vue, TS, JS, HTML, SCSS',
     company: 'dukkubisesang',
     liveURL: {
       long: 'https://www.peterpanz.com',
@@ -102,21 +102,22 @@ export default function Home() {
   return (
     <main className={style.main}>
       <header className={style.header}>
-        {`</> Loren Lee`}
+       <span className={style.headerTag}>{`</>`}</span> Loren Lee
       </header>
       <Account/>
+
       <div
         className={clsx("w-full", style.mainHeadingWrapper)}
         style={{backgroundImage: `url('/image/background/round-purple.png')`}}
       >
         <h1 className={style.mainHeading}>
-          Frontend? <br/>
+          Frontend?<br/>
           Loren Lee!
         </h1>
       </div>
       <div className="flex flex-col items-center mb-3.5">
         <MapPin color={"white"}/>
-        <p className={style.based}>based Seoul, freelance worker</p>
+        <p className={style.based}>based Seoul,<br/> freelance worker</p>
         <Image className={style.profile} src={Profile} alt={""}/>
       </div>
       <div className={style.introWrapper}>
