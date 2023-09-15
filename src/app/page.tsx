@@ -15,7 +15,7 @@ import clsx from "clsx";
 
 const account = {
   email: 'lorenlee.dev@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/lorenleedev',
+  linkedin: 'https://www.linkedin.com/in/lorenlee-dev',
   github: 'https://www.github.com/lorenleedev'
 }
 
@@ -177,7 +177,7 @@ export default function Home() {
       <div className={style.headingWrapper}>
         <h2 className={style.heading2}>Want to Start a Project?</h2>
       </div>
-      <a className={style.contactWrapper}>
+      <a className={style.contactWrapper}  href={`mailto:${account.email}`}>
         {account.email}
       </a>
       <div className={style.attractText}>
