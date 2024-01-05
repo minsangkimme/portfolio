@@ -125,11 +125,15 @@
 }
 
 .projectWrapper {
-  display: flex;
+  display: grid;
   gap: 48px;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1000px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .projectWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .project {
@@ -138,7 +142,7 @@
 }
 
 .projectTitle {
-  color: #FF16DF;
+  color: #828282;
   font-size: 22px;
   font-weight: 700;
   margin: 12px 0 6px;
@@ -152,7 +156,7 @@
 }
 
 .projectContent {
-  color: #FFF;
+  color: #d0d0d0;
   font-weight: 400;
 }
 
@@ -200,4 +204,10 @@
   100% {
     rotate: y 360deg;
   }
+}
+
+.languageButton {
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 1;
 }

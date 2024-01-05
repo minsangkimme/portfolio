@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import style from './style.module.scss';
 import MailIcon from '../../public/image/icon/mail.svg';
@@ -9,9 +11,14 @@ import Project1 from '../../public/image/project/project1.png';
 import Project2 from '../../public/image/project/project2.png';
 import Project3 from '../../public/image/project/project3.png';
 import Project4 from '../../public/image/project/project4.png';
+import Project5 from '../../public/image/project/project5.png';
+import Project6 from '../../public/image/project/project6.png';
 import shortid from 'shortid';
+import { useTranslation } from 'react-i18next';
+import i18n from "../thirdParty/i18n";
 
 import clsx from "clsx";
+import {useState} from "react";
 
 const account = {
   email: 'lorenlee.dev@gmail.com',
@@ -19,55 +26,26 @@ const account = {
   github: 'https://www.github.com/lorenleedev'
 }
 
-const work = [
-  {
-    image: Project1,
-    title: 'Real estate trading platform',
-    completed: '2023',
-    type: 'Platform',
-    usingSkills: 'Vue, TS, JS, HTML, SCSS',
-    company: 'dukkubisesang',
-    liveURL: {
-      long: 'https://www.peterpanz.com',
-      short: 'www.peterpanz.com'
-    }
-  },
-  {
-    image: Project2,
-    title: 'Landing page for the platform',
-    completed: '2022',
-    type: 'Responsive Landing Page',
-    usingSkills: 'React, JS, HTML, SCSS',
-    company: 'dukkubisesang',
-    liveURL: {
-      long: 'https://partners.peterpanz.com',
-      short: 'partners.peterpanz.com'
-    }
-  },
+// 오래된 순으로 나열
+const works = [
   {
     image: Project3,
-    title: 'Telemedicine platform',
-    completed: '2021',
-    type: 'Platform',
-    usingSkills: 'Vue, JS, HTML, SCSS, AWS chime',
-    company: 'hrobotics',
-    liveURL: {
-      long: 'https://hroboticsus.com/smart-rehab-devices/rebless-clinic',
-      short: 'https://hroboticsus.com'
-    }
   },
   {
     image: Project4,
-    title: 'Landing page for the platform',
-    completed: '2020',
-    type: 'Responsive Landing Page',
-    usingSkills: 'React, JS, HTML, SCSS',
-    company: 'hrobotics',
-    liveURL: {
-      long: 'https://www.rebless.clinic',
-      short: 'www.rebless.clinic'
-    }
-  }
+  },
+  {
+    image: Project1,
+  },
+  {
+    image: Project2,
+  },
+  {
+    image: Project5,
+  },
+  {
+    image: Project6,
+  },
 ]
 
 const skill = [
@@ -79,6 +57,8 @@ const skill = [
   'UI'
 ]
 const Account = () => {
+  const [lang, setLang] = useState(navigator.language || "en-US");
+
   return (
     <div className={style.socialWrapper}>
       <a href={`mailto:${account.email}`}>
@@ -91,40 +71,55 @@ const Account = () => {
         <LinkIcon color={"white"}/>
       </a>
       <a href={account.github}
+
          target={"_blank"}
       >
         <GithubIcon color={"white"}/>
+      </a>
+      <a
+        title={lang.includes("ko-KR") ? "change language" : "영어로 보기"}
+        className={style.languageButton}
+        onClick={() => {
+          if (lang.includes("ko-KR")) {
+            i18n.changeLanguage("en-US")
+            setLang("en-US")
+          } else {
+            i18n.changeLanguage("ko-KR")
+            setLang("ko-KR")
+          }
+        }}
+      >
+        {lang.includes("ko-KR") ? "🇺🇸" : "🇰🇷"}
       </a>
     </div>
   )
 }
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <main className={style.main}>
       <header className={style.header}>
        <span className={style.headerTag}>{`</>`}</span> Loren Lee
       </header>
       <Account/>
-
       <div
         className={clsx("w-full", style.mainHeadingWrapper)}
         style={{backgroundImage: `url('/image/background/round-purple.png')`}}
       >
         <h1 className={style.mainHeading}>
-          Frontend?<br/>
-          Loren Lee!
+          {t("title1")}<br/>
+          {t("title2")}
         </h1>
       </div>
       <div className="flex flex-col items-center mb-3.5">
         <MapPin color={"white"}/>
-        <p className={style.based}>based Seoul,<br/> freelance worker</p>
+        <p className={style.based}>{t("based")}<br/> {t("freelancer")}</p>
         <Image className={style.profile} src={Profile} alt={""}/>
       </div>
       <div className={style.introWrapper}>
-        <p className={style.introTitle}>Hello!</p>
-        <p className={style.introText}>
-          I build responsive websites and web apps using HTML, CSS, and JavaScript to ensure users get the best experience on their devices and browsers.
-        </p>
+        <p className={style.introTitle}>{t("greeting")}</p>
+        <p className={style.introText}>{t("introduction")}</p>
         <div className={style.badgeWrapper}>
           {
             skill.map((item) => {
@@ -144,28 +139,30 @@ export default function Home() {
 
       <div className={"m-20"}></div>
       <div className={style.headingWrapper}>
-        <h2 className={style.heading2}>Featured Work</h2>
+        <h2 className={style.heading2}>{t("heading2")}</h2>
       </div>
       <div className={style.projectWrapper}>
         {
-          work.map((item, index) => {
+          works.map((item, index) => {
             return (
               <div
                 key={shortid()}
                 className={style.project}
               >
                 <div className={style.projectImageWrapper}>
-                  <Image className={style.projectImage} src={item.image} alt={"project cover image"}/>
+                  <a href={t(`work${index+1}.liveURL.long`)} target={'_black'}>
+                    <Image className={style.projectImage} src={item.image} alt={"project cover image"}/>
+                  </a>
                 </div>
                 <div className={clsx(style.projectTitle, style.projectTitleYellow)}>
-                  {item.title}
+                  {t(`work${index+1}.title`) }
                 </div>
                 <div className={style.projectContent}>
-                  <span className={style.textGray}>Completed | </span>{item.completed}<br/>
-                  <span className={style.textGray}>Type | </span>{item.type}<br/>
-                  <span className={style.textGray}>Using Skills | </span>{item.usingSkills}<br/>
-                  <span className={style.textGray}>Company | </span>{item.company} <br/>
-                  <span className={style.textGray}>Live URL | </span><a href={item.liveURL.long} target={'_black'}>{item.liveURL.short}</a>
+                  <span className={style.textGray}>{t("completed")} | </span>{t(`work${index+1}.completed`)}<br/>
+                  <span className={style.textGray}>{t("type")} | </span>{t(`work${index+1}.type`)}<br/>
+                  <span className={style.textGray}>{t("skills")} | </span>{t(`work${index+1}.usingSkills`)}<br/>
+                  <span className={style.textGray}>{t("company")} | </span>{t(`work${index+1}.company`)} <br/>
+                  <span className={style.textGray}>{t("liveURL")} | </span><a href={t(`work${index+1}.liveURL.long`)} target={'_black'}>{t(`work${index+1}.liveURL.short`)}</a>
                 </div>
               </div>
             )
@@ -175,13 +172,13 @@ export default function Home() {
 
       <div className={"m-20"}></div>
       <div className={style.headingWrapper}>
-        <h2 className={style.heading2}>Want to Start a Project?</h2>
+        <h2 className={style.heading2}>{t("startProject")}</h2>
       </div>
       <a className={style.contactWrapper}  href={`mailto:${account.email}`}>
         {account.email}
       </a>
       <div className={style.attractText}>
-        With my skills, I can turn your idea into a product.
+        {t("attract")}
       </div>
 
       <div className={"m-20"}></div>
