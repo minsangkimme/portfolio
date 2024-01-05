@@ -18,7 +18,7 @@ import { useTranslation } from 'react-i18next';
 import i18n from "../thirdParty/i18n";
 
 import clsx from "clsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 const account = {
   email: 'lorenlee.dev@gmail.com',
@@ -57,7 +57,11 @@ const skill = [
   'UI'
 ]
 const Account = () => {
-  const [lang, setLang] = useState(navigator.language || "en-US");
+  const [lang, setLang] = useState("en-US");
+
+  useEffect(() => {
+    setLang(navigator?.language || "en-US");
+  }, []);
 
   return (
     <div className={style.socialWrapper}>
