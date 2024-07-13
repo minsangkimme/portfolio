@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 body {
-    font-family: 'ClashDisplay-Variable', sans-serif;
-    background: black;
-    color: white;
+    color: #3e3e3e;
     text-align: center;
-    letter-spacing: 0.5px;
+    cursor: default;
 }

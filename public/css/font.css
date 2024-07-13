@@ -30,32 +30,26 @@
 */
 
 @font-face {
-    font-family: 'ClashDisplay-Variable';
-    src: url('../font/ClashDisplay-Variable.woff2') format('woff2'),
-    url('../font/ClashDisplay-Variable.woff') format('woff'),
-    url('../font/ClashDisplay-Variable.ttf') format('truetype');
-    font-weight: 400 700;
-    font-display: swap;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ClashDisplay-Regular';
-    src: url('../font/ClashDisplay-Regular.woff2') format('woff2'),
-    url('../font/ClashDisplay-Regular.woff') format('woff'),
-    url('../font/ClashDisplay-Regular.ttf') format('truetype');
+    font-family: 'Pretendard-Regular';
+    src: url('../font/Pretendard-Regular.subset.woff2') format('woff2'),
     font-weight: 400;
     font-display: swap;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../font/Pretendard-SemiBold.subset.woff2') format('woff2'),
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
 
 @font-face {
-    font-family: 'ClashDisplay-Semibold';
-    src: url('../font/ClashDisplay-Semibold.woff2') format('woff2'),
-    url('../font/ClashDisplay-Semibold.woff') format('woff'),
-    url('../font/ClashDisplay-Semibold.ttf') format('truetype');
-    font-weight: 600;
+    font-family: 'Pretendard-ExtraBold';
+    src: url('../font/Pretendard-ExtraBold.subset.woff2') format('woff2'),
+    font-weight: 700;
     font-display: swap;
     font-style: normal;
 }
