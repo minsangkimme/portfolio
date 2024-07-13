@@ -15,6 +15,7 @@ import Project6 from '../../public/image/project/project6.png';
 import Project7 from '../../public/image/project/project7.png';
 import Project8 from '../../public/image/project/project8.png';
 
+import ChannelService from "../thirdParty/channeltalk";
 import shortid from 'shortid';
 import { useTranslation } from 'react-i18next';
 import i18n from "../thirdParty/i18n";
@@ -128,6 +129,12 @@ export default function Home() {
 
   useEffect(() => {
     setLang(navigator?.language || "en-US");
+    ChannelService.loadScript();
+    ChannelService.boot({
+      "pluginKey": "1667bdd5-209d-4b93-9292-87af6353a474", // fill your plugin key
+      "customLauncherSelector": "#custom-channeltalk-button",
+      "hideChannelButtonOnBoot": true
+    });
   }, []);
 
   const handleChangeLanguage = () => {
@@ -209,10 +216,14 @@ export default function Home() {
         © 2024 Loren Lee All rights reserved.
       </footer>
 
-      {/*<div className={style.floatingButtonWrapper}>*/}
-      {/*  <button className={style.floatingButton}>커피챗하기</button>*/}
-      {/*  <button className={style.floatingButton2}>이력서보기</button>*/}
-      {/*</div>*/}
+      <div className={style.floatingButtonWrapper}>
+        <button id={"custom-channeltalk-button"} className={style.floatingButton}>
+          {t('coffee_chat_button')}
+        </button>
+        <a className={style.floatingButton2} href={"https://lorenlee.webflow.io/"} target={"_blank"}>
+          {t('resume_button')}
+        </a>
+      </div>
     </main>
   )
 }

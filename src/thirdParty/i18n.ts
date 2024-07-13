@@ -17,6 +17,8 @@ i18n.use(initReactI18next).init({
         company: "Company",
         liveURL: "Live URL",
         heading2: "Featured Work",
+        coffee_chat_button: "Let's talk",
+        resume_button: "Resume",
         work1: {
           title: 'Telemedicine platform',
           completed: '2021',
@@ -121,6 +123,8 @@ i18n.use(initReactI18next).init({
         company: "회사",
         liveURL: "URL",
         heading2: "개발한 프로젝트",
+        coffee_chat_button: "커피챗하기",
+        resume_button: "이력서보기",
         work1: {
           title: '원격진료 서비스 리블레스 개발',
           completed: '2020년',
