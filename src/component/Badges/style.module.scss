@@ -1,0 +1,58 @@
+.base {
+  color: #212121;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  width: fit-content;
+  padding: 3px 12px 4px;
+  background: #f4faf4;
+  border-radius: var(--border-radius-lg);
+  transition: transform .2s;
+  border: 1px solid;
+}
+
+.base:hover {
+  transform: var(--transform-top);
+}
+
+.yellowBadge {
+  @extend .base;
+  background-color: #faf8f4;
+  border-color: #ffb53e;
+}
+
+.blueBadge {
+  @extend .base;
+  background-color: #eef7fc;
+  border-color: #3e8af7;
+}
+
+.greenBadge {
+  @extend .base;
+  background-color: #f4faf4;
+  border-color: #64d17c;
+}
+
+.purpleBadge {
+  @extend .base;
+  background-color: #f5f3fb;
+  border-color: #7f5cf1;
+}
+
+.redBadge {
+  @extend .base;
+  background-color: #fdf4f3;
+  border-color: #ff5150;
+}
+
+.grayBadge {
+  @extend .base;
+  background-color: #f4f4f4;
+  border-color: #4d4d4d;
+}
+
+.lightYellowBadge {
+  @extend .base;
+  background-color: #ffffe5;
+  border-color: #fff62a;
+}

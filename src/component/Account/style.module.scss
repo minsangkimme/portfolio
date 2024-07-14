@@ -1,0 +1,21 @@
+.socialWrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+}
+
+.socialWrapper a {
+  transition: transform var(--transition-duration);
+}
+
+.socialWrapper a:hover {
+  transform: var(--transform-top);
+}
+
+.languageButton {
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 1;
+}
+

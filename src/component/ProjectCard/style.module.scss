@@ -1,0 +1,22 @@
+.project {
+  max-width: 400px;
+  text-align: left;
+}
+
+.projectImageWrapper {
+  border: 1px solid var(--border-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-duration);
+}
+
+.projectImageWrapper:hover {
+  transform: var(--transform-top);
+}
+
+.projectTitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 12px 0 8px;
+}

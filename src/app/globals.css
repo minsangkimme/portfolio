@@ -2,8 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --color-white: #fff;
+    --color-text-primary: #3e3e3e;
+    --color-text-secondary: #5b5b5b;
+    --color-button-primary: #181818;
+    --border-radius-sm: 6px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 24px;
+    --border-color: #efefef;
+    --gap-xs: 6px;
+    --gap-sm: 12px;
+    --gap-md: 24px;
+    --gap-lg: 48px;
+    --gap-xl: 72px;
+    --box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+    --transition-duration: .2s;
+    --transform-top: translateY(-3px);
+}
+
 body {
-    color: #3e3e3e;
+    color: var(--color-text-primary);
     text-align: center;
     cursor: default;
 }

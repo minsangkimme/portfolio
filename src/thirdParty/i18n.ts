@@ -19,18 +19,18 @@ i18n.use(initReactI18next).init({
         heading2: "Featured Work",
         coffee_chat_button: "Let's talk",
         resume_button: "Resume",
-        work1: {
+        project1: {
           title: 'Telemedicine platform',
           completed: '2021',
           type: 'Platform',
           usingSkills: 'Vue, JS, HTML, SCSS, AWS chime',
           company: 'hrobotics',
           liveURL: {
-            long: 'https://hroboticsus.com/smart-rehab-devices/rebless-clinic',
-            short: 'https://hroboticsus.com'
+            long: 'https://hroboticsinc.com',
+            short: 'hroboticsinc.com'
           }
         },
-        work2: {
+        project2: {
           title: 'Landing page for the platform',
           completed: '2020',
           type: 'Responsive Landing Page',
@@ -41,7 +41,7 @@ i18n.use(initReactI18next).init({
             short: 'www.rebless.clinic'
           }
         },
-        work3: {
+        project3: {
           title: 'Real estate trading platform',
           completed: '2023',
           type: 'Platform',
@@ -52,7 +52,7 @@ i18n.use(initReactI18next).init({
             short: 'www.peterpanz.com'
           }
         },
-        work4: {
+        project4: {
           title: 'Landing page for the platform',
           completed: '2022',
           type: 'Responsive Landing Page',
@@ -63,7 +63,7 @@ i18n.use(initReactI18next).init({
             short: 'partners.peterpanz.com'
           }
         },
-        work5: {
+        project5: {
           title: 'Redcap rentcar management backoffice',
           completed: '2023',
           type: 'UI Development',
@@ -74,7 +74,7 @@ i18n.use(initReactI18next).init({
             short: 'www.redcaprentcar.com'
           }
         },
-        work6: {
+        project6: {
           title: 'Apartment management system',
           completed: '2024',
           type: 'Backoffice',
@@ -85,7 +85,7 @@ i18n.use(initReactI18next).init({
             short: 'www.aptner.com'
           }
         },
-        work7: {
+        project7: {
           title: 'Spend management system',
           completed: '2024',
           type: 'SaaS Backoffice',
@@ -96,7 +96,7 @@ i18n.use(initReactI18next).init({
             short: 'app.spendit.kr'
           }
         },
-        work8: {
+        project8: {
           title: 'Landing page for Spendit',
           completed: '2024',
           type: 'Responsive Landing Page',
@@ -125,18 +125,18 @@ i18n.use(initReactI18next).init({
         heading2: "개발한 프로젝트",
         coffee_chat_button: "커피챗하기",
         resume_button: "이력서보기",
-        work1: {
+        project1: {
           title: '원격진료 서비스 리블레스 개발',
           completed: '2020년',
           type: '웹 플랫폼',
           usingSkills: 'Vue, JS, HTML, SCSS, AWS chime, i18n',
           company: '에이치로보틱스',
           liveURL: {
-            long: 'https://hroboticsus.com/smart-rehab-devices/rebless-clinic',
-            short: 'https://hroboticsus.com'
+            long: 'https://hroboticsinc.com',
+            short: 'hroboticsinc.com'
           }
         },
-        work2: {
+        project2: {
           title: '리블레스 랜딩페이지 개발',
           completed: '2021년',
           type: '반응형 웹사이트',
@@ -147,7 +147,7 @@ i18n.use(initReactI18next).init({
             short: 'www.rebless.clinic'
           }
         },
-        work3: {
+        project3: {
             title: '피터팬의 좋은방 구하기 개발',
             completed: '2022년',
             type: '웹 플랫폼',
@@ -158,7 +158,7 @@ i18n.use(initReactI18next).init({
               short: 'www.peterpanz.com'
             }
         },
-        work4: {
+        project4: {
           title: '피터팬 광고상품 랜딩페이지 개발',
           completed: '2023년',
           type: '반응형 웹사이트',
@@ -169,7 +169,7 @@ i18n.use(initReactI18next).init({
             short: 'partners.peterpanz.com'
           }
         },
-        work5: {
+        project5: {
           title: '레드캡 렌터카관리 백오피스 퍼블리싱',
           completed: '2023년',
           type: '퍼블리싱',
@@ -180,7 +180,7 @@ i18n.use(initReactI18next).init({
             short: 'www.redcaprentcar.com'
           }
         },
-        work6: {
+        project6: {
           title: '아파트 통합관리 시스템 리뉴얼 개발',
           completed: '2024년',
           type: 'SaaS 백오피스',
@@ -191,7 +191,7 @@ i18n.use(initReactI18next).init({
             short: 'www.aptner.com'
           }
         },
-        work7: {
+        project7: {
           title: '기업 비용관리 솔루션 유지보수',
           completed: '2024',
           type: 'SaaS 백오피스',
@@ -202,7 +202,7 @@ i18n.use(initReactI18next).init({
             short: 'app.spendit.kr'
           }
         },
-        work8: {
+        project8: {
           title: '스팬딧 랜딩 페이지딩 개발',
           completed: '2024',
           type: '반응형 랜딩 페이지',
