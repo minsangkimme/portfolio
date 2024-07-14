@@ -67,7 +67,7 @@ export default function Home() {
         }
       </div>
 
-      <div className={"m-20"}></div>
+      <div className={"m-10 md:m-20"}></div>
 
       <Account lang={lang} handleChangeLanguage={handleChangeLanguage}/>
       <Footer/>
