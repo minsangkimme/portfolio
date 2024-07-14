@@ -1,18 +1,28 @@
 .headingWrapper {
   background-image: url("/image/background/round-mix.png");
-  background-size: 170px;
   width: 100%;
   background-repeat: no-repeat;
-  height: 125px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-position: center;
   margin-top: 12px;
-  margin-bottom: 20px;
+  height: 100px;
+  background-size: 120px;
+
+  @media (min-width: 768px) {
+    height: 125px;
+    background-size: 170px;
+    margin-bottom: 20px;
+  }
 }
 
 .emphasizedHeading {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+
+  }
 }

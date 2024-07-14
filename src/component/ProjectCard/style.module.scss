@@ -16,7 +16,24 @@
 }
 
 .projectTitle {
-  font-size: 22px;
   font-weight: 700;
-  margin: 12px 0 8px;
+  font-size: 22px;
+  margin: 12px 0 4px;
+
+  @media (min-width: 768px) {
+    margin: 12px 0 8px;
+  }
+}
+
+.textGray {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-right: 4px;
+}
+
+.textBar {
+  margin-bottom: -1px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-left: 3px;
 }
