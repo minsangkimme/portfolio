@@ -203,7 +203,7 @@ i18n.use(initReactI18next).init({
           }
         },
         project8: {
-          title: '스팬딧 랜딩 페이지딩 개발',
+          title: '스팬딧 랜딩 페이지 개발',
           completed: '2024',
           type: '반응형 랜딩 페이지',
           usingSkills: '웹플로우',
