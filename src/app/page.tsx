@@ -20,7 +20,7 @@ import SkillBadge from "@/component/Badges/SkillBadge";
 import ProjectCard from "../component/ProjectCard";
 
 import style from './style.module.scss';
-import Profile from '../../public/image/profile/profile1.png';
+import Profile from '../../public/image/profile/profile-linkedin.jpeg';
 
 
 export default function Home() {
