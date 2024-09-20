@@ -192,7 +192,7 @@ i18n.use(initReactI18next).init({
           }
         },
         project7: {
-          title: '기업 비용관리 솔루션 유지보수',
+          title: '기업 비용관리 솔루션 개발',
           completed: '2024',
           type: 'SaaS 백오피스',
           usingSkills: 'React, TS, React Query, SCSS, i18n',
