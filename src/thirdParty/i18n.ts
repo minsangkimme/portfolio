@@ -18,6 +18,7 @@ i18n.use(initReactI18next).init({
         liveURL: "Live URL",
         heading2: "Featured Work",
         coffee_chat_button: "Let's talk",
+        download_resume: "Download Resume",
         resume_button: "Resume",
         project1: {
           title: 'Telemedicine platform',
@@ -123,7 +124,8 @@ i18n.use(initReactI18next).init({
         company: "회사",
         liveURL: "URL",
         heading2: "개발한 프로젝트",
-        coffee_chat_button: "커피챗하기",
+        coffee_chat_button: "☕️ 커피챗하기",
+        download_resume: "따끈따끈한 이력서 다운받기 🫖",
         resume_button: "이력서보기",
         project1: {
           title: '원격진료 서비스 리블레스 개발',
