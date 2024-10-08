@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </div>
         <div className={style.downloadWrapper}>
-          <OutlinedButton label={t('download_resume')} tag={"a"} href={"/career/이은결_이력서.pdf"} download/>
+          <OutlinedButton label={t('download_resume')} tag={"a"} href={"/career/이은결-이력서.pdf"} download/>
         </div>
       </div>
 
