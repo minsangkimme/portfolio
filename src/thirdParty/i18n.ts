@@ -24,7 +24,7 @@ i18n.use(initReactI18next).init({
           title: 'Telemedicine platform',
           completed: '2021',
           type: 'Platform',
-          usingSkills: 'Vue, JS, HTML, SCSS, AWS chime',
+          usingSkills: 'React, ContextAPI, Javascript, CSS, i18n',
           company: 'hrobotics',
           liveURL: {
             long: 'https://hroboticsinc.com',
@@ -46,7 +46,7 @@ i18n.use(initReactI18next).init({
           title: 'Real estate trading platform',
           completed: '2023',
           type: 'Platform',
-          usingSkills: 'Vue, TS, JS, HTML, SCSS, i18n',
+          usingSkills: ' Vue, Vuex, TS, JS, Php(lalavel), SCSS',
           company: 'dukkubisesang',
           liveURL: {
             long: 'https://www.peterpanz.com',
@@ -57,7 +57,7 @@ i18n.use(initReactI18next).init({
           title: 'Landing page for the platform',
           completed: '2022',
           type: 'Responsive Landing Page',
-          usingSkills: 'React, JS, HTML, SCSS',
+          usingSkills: 'React, TS, Bootstrap CSS',
           company: 'dukkubisesang',
           liveURL: {
             long: 'https://partners.peterpanz.com',
@@ -79,7 +79,7 @@ i18n.use(initReactI18next).init({
           title: 'Apartment management system',
           completed: '2024',
           type: 'Backoffice',
-          usingSkills: 'Next, React, TS, MUI, Redux',
+          usingSkills: 'React, Next, Typescript, Redux, Saga, Tailwind',
           company: 'Aptner',
           liveURL: {
             long: 'https://www.aptner.com/',
@@ -90,7 +90,7 @@ i18n.use(initReactI18next).init({
           title: 'Spend management system',
           completed: '2024',
           type: 'SaaS Backoffice',
-          usingSkills: 'React, TS, React Query, SCSS, i18n',
+          usingSkills: 'React, Tanstack Query, TS, , i18n, Webview',
           company: 'Spendit',
           liveURL: {
             long: 'https://app.spendit.kr',
@@ -101,7 +101,7 @@ i18n.use(initReactI18next).init({
           title: 'Landing page for Spendit',
           completed: '2024',
           type: 'Responsive Landing Page',
-          usingSkills: 'Webflow',
+          usingSkills: 'Webflow, JS',
           company: 'Spendit',
           liveURL: {
             long: 'https://www.spendit.kr',
@@ -131,7 +131,7 @@ i18n.use(initReactI18next).init({
           title: '원격진료 서비스 리블레스 개발',
           completed: '2020년',
           type: '웹 플랫폼',
-          usingSkills: 'Vue, JS, HTML, SCSS, AWS chime, i18n',
+          usingSkills:'Vue, Vuex, JS, AWS chime, SCSS, i18n',
           company: '에이치로보틱스',
           liveURL: {
             long: 'https://hroboticsinc.com',
@@ -142,7 +142,7 @@ i18n.use(initReactI18next).init({
           title: '리블레스 랜딩페이지 개발',
           completed: '2021년',
           type: '반응형 웹사이트',
-          usingSkills: 'React, JS, HTML, SCSS, i18n',
+          usingSkills: 'React, ContextAPI, Javascript, CSS, i18n',
           company: '에이치로보틱스',
           liveURL: {
             long: 'https://www.rebless.clinic',
@@ -153,7 +153,7 @@ i18n.use(initReactI18next).init({
             title: '피터팬의 좋은방 구하기 개발',
             completed: '2022년',
             type: '웹 플랫폼',
-            usingSkills: 'Vue, TS, JS, HTML, SCSS',
+            usingSkills: 'Vue, Vuex, TS, JS, Php(lalavel), SCSS',
             company: '두꺼비세상',
             liveURL: {
               long: 'https://www.peterpanz.com',
@@ -164,7 +164,7 @@ i18n.use(initReactI18next).init({
           title: '피터팬 광고상품 랜딩페이지 개발',
           completed: '2023년',
           type: '반응형 웹사이트',
-          usingSkills: 'React, JS, HTML, SCSS',
+          usingSkills: 'React, TS, Bootstrap CSS',
           company: '두꺼비세상',
           liveURL: {
             long: 'https://partners.peterpanz.com',
@@ -186,7 +186,7 @@ i18n.use(initReactI18next).init({
           title: '아파트 통합관리 시스템 리뉴얼 개발',
           completed: '2024년',
           type: 'SaaS 백오피스',
-          usingSkills: 'Next, React, TS, MUI, Redux',
+          usingSkills: 'React, Next, Typescript, Redux, Saga, Tailwind',
           company: '아파트너',
           liveURL: {
             long: 'https://www.aptner.com/',
@@ -197,7 +197,7 @@ i18n.use(initReactI18next).init({
           title: '기업 비용관리 솔루션 개발',
           completed: '2024',
           type: 'SaaS 백오피스',
-          usingSkills: 'React, TS, React Query, SCSS, i18n',
+          usingSkills: 'React, Tanstack Query, TS, , i18n, Webview',
           company: '스팬딧',
           liveURL: {
             long: 'https://app.spendit.kr',
@@ -208,7 +208,7 @@ i18n.use(initReactI18next).init({
           title: '스팬딧 랜딩 페이지 개발',
           completed: '2024',
           type: '반응형 랜딩 페이지',
-          usingSkills: '웹플로우',
+          usingSkills: '웹플로우, JS',
           company: '스팬딧',
           liveURL: {
             long: 'https://www.spendit.kr',
