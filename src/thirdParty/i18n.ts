@@ -17,6 +17,7 @@ i18n.use(initReactI18next).init({
         company: "Company",
         liveURL: "Live URL",
         heading2: "Featured Work",
+        heading3: "Ongoing project",
         coffee_chat_button: "Let's talk",
         download_resume: "Download Resume",
         resume_button: "Resume",
@@ -90,7 +91,7 @@ i18n.use(initReactI18next).init({
           title: 'Spend management system',
           completed: '2024',
           type: 'SaaS Backoffice',
-          usingSkills: 'React, Tanstack Query, TS, , i18n, Webview',
+          usingSkills: 'React, Tanstack Query, TS, i18n, Webview',
           company: 'Spendit',
           liveURL: {
             long: 'https://app.spendit.kr',
@@ -106,6 +107,17 @@ i18n.use(initReactI18next).init({
           liveURL: {
             long: 'https://www.spendit.kr',
             short: 'www.spendit.kr'
+          }
+        },
+        project9: {
+          title: 'Shared office platform "FASTFIVE"',
+          completed: 'ongoing in an agile approach',
+          type: 'Platform',
+          usingSkills: 'Vue2, Vue3, Pinia, TS, SCSS, Storybook',
+          company: 'Fastfive',
+          liveURL: {
+            long: 'https://members.fastfive.co.kr/',
+            short: 'members.fastfive.co.kr'
           }
         },
       }
@@ -124,6 +136,7 @@ i18n.use(initReactI18next).init({
         company: "회사",
         liveURL: "URL",
         heading2: "개발한 프로젝트",
+        heading3: "진행중 프로젝트",
         coffee_chat_button: "☕️ 커피챗하기",
         download_resume: "따끈따끈한 이력서 다운받기 🫖",
         resume_button: "이력서보기",
@@ -197,7 +210,7 @@ i18n.use(initReactI18next).init({
           title: '기업 비용관리 솔루션 개발',
           completed: '2024',
           type: 'SaaS 백오피스',
-          usingSkills: 'React, Tanstack Query, TS, , i18n, Webview',
+          usingSkills: 'React, Tanstack Query, TS, i18n, Webview',
           company: '스팬딧',
           liveURL: {
             long: 'https://app.spendit.kr',
@@ -213,6 +226,17 @@ i18n.use(initReactI18next).init({
           liveURL: {
             long: 'https://www.spendit.kr',
             short: 'www.spendit.kr'
+          }
+        },
+        project9: {
+          title: '공유 오피스 플랫폼 패스트파이브',
+          completed: '애자일 프로젝트 진행중',
+          type: '웹 플랫폼',
+          usingSkills: 'Vue2, Vue3, Pinia, TS, SCSS, Storybook',
+          company: '패스트파이브',
+          liveURL: {
+            long: 'https://members.fastfive.co.kr/',
+            short: 'members.fastfive.co.kr'
           }
         },
       },

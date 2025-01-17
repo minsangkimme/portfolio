@@ -20,7 +20,8 @@ import SkillBadge from "@/component/Badges/SkillBadge";
 import ProjectCard from "../component/ProjectCard";
 
 import style from './style.module.scss';
-import Profile from '../../public/image/profile/linked_in_open_to_work.jpeg';
+import Profile from '../../public/image/profile/profile2.jpeg';
+import Project9 from "../../public/image/project/project9.png";
 
 
 export default function Home() {
@@ -55,6 +56,14 @@ export default function Home() {
           <OutlinedButton label={t('download_resume')} tag={"a"} href={"/career/이은결-이력서.pdf"} download/>
         </div>
       </div>
+
+      <div className={'mt-12'}/>
+      <EmphasizedHeading label={t("heading3")}/>
+      <ProjectCard projectInfo={{
+        translateKey: "project9",
+        image: Project9,
+      }}/>
+      <div className={'mt-16'}/>
 
       <div className={'mt-12'}/>
       <EmphasizedHeading label={t("heading2")}/>
