@@ -20,7 +20,7 @@ import SkillBadge from "@/component/Badges/SkillBadge";
 import ProjectCard from "../component/ProjectCard";
 
 import style from './style.module.scss';
-import Profile from '../../public/image/profile/profile2.jpeg';
+import Profile from '../../public/image/profile/profile_openTowork.jpeg';
 import Project9 from "../../public/image/project/project9.png";
 
 
@@ -53,17 +53,17 @@ export default function Home() {
           </div>
         </div>
         <div className={style.downloadWrapper}>
-          <OutlinedButton label={t('download_resume')} tag={"a"} href={"/career/이은결-이력서.pdf"} download/>
+          <OutlinedButton label={t('download_resume')} tag={"a"} href={"/career/프론트엔드_김민상.pdf"} download/>
         </div>
       </div>
 
-      <div className={'mt-12'}/>
+      {/* <div className={'mt-12'}/>
       <EmphasizedHeading label={t("heading3")}/>
       <ProjectCard projectInfo={{
         translateKey: "project9",
         image: Project9,
       }}/>
-      <div className={'mt-16'}/>
+      <div className={'mt-16'}/> */}
 
       <div className={'mt-12'}/>
       <EmphasizedHeading label={t("heading2")}/>
@@ -85,16 +85,16 @@ export default function Home() {
       <Footer/>
 
       <FloatingButtons>
-        <OutlinedButton
+        <ContainedButton
           id={"custom-channeltalk-button"}
           label={t('coffee_chat_button')}
         />
-        <ContainedButton
+        {/* <ContainedButton
           label={t('resume_button')}
           tag={'a'}
-          href={"https://lorenlee.webflow.io/"}
+          href={""}
           target={"_blank"}
-        />
+        /> */}
       </FloatingButtons>
     </main>
   )

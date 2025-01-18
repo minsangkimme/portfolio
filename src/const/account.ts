@@ -1,5 +1,5 @@
 export const account = {
-  email: 'lorenlee.dev@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/lorenlee-dev',
-  github: 'https://www.github.com/lorenleedev'
+  email: 'minsang.tech@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/minsangkimme',
+  github: 'https://www.github.com/minsangkimme'
 }

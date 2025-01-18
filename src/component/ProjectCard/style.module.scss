@@ -25,9 +25,12 @@
   }
 }
 
-.textGray {
+.textWrapper {
   font-size: 14px;
-  color: var(--color-text-secondary);
+  color: gray;
+}
+
+.textGray {
   margin-right: 4px;
 }
 
@@ -36,4 +39,19 @@
   display: inline-block;
   vertical-align: text-bottom;
   margin-left: 3px;
+}
+
+.textDescription {
+  display: block;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 12px;
+  font-size: 16px;
+  color: var(--color-text-primary);
+  background-color: #f5f5f5;
+}
+
+.cardImage {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }

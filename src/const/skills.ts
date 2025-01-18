@@ -6,25 +6,25 @@ export const skills: SkillBadgeProps[] = [
     color: 'yellow'
   },
   {
-    label: 'React16-18',
+    label: 'React',
     color: 'blue'
   },
   {
-    label: 'Vue2,3',
+    label: 'ReactNative',
     color: 'green'
   },
   {
-    label: 'Next13',
+    label: 'Next',
     color: 'purple'
   },
   {
-    label: 'SCSS',
+    label: 'Styled-Component',
     color: 'red'
   },
-  {
-    label: 'Webflow',
-    color: 'gray'
-  },
+  // {
+  //   label: 'Webflow',
+  //   color: 'gray'
+  // },
   {
     label: 'UI',
     color: 'lightYellow'

@@ -5,7 +5,7 @@ const useChanneltalk = () => {
   useEffect(() => {
     ChannelService.loadScript();
     ChannelService.boot({
-      "pluginKey": "1667bdd5-209d-4b93-9292-87af6353a474",
+      "pluginKey": "5ef1a8b6-59b0-49f5-b29c-2f32071df86c",
       "customLauncherSelector": "#custom-channeltalk-button",
       "hideChannelButtonOnBoot": true
     });
