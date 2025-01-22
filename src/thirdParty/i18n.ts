@@ -143,7 +143,7 @@ i18n.use(initReactI18next).init({
             title: '신규 멤버십 서비스 개발',
             completed: '2023.06 - 2023.07',
             type: '앱 플랫폼',
-            usingSkills: 'ReactNative, Next, Typescript, styled-components, recoil',
+            usingSkills: 'ReactNative, Typescript, styled-components, recoil',
             company: '워시스왓(세탁특공대)',
             liveURL: {
               long: 'https://biz.chosun.com/industry/company/2023/07/07/EKWKO5HGLREEFJY6GHRGKPS7W4/',
@@ -155,7 +155,7 @@ i18n.use(initReactI18next).init({
           title: '주문 퍼널 개선 및 우수사원 선정',
           completed: '2023.09 - 2023.12',
           type: '앱 플랫폼',
-          usingSkills: 'ReactNative, Next, Typescript, styled-components, recoil',
+          usingSkills: 'ReactNative, Typescript, styled-components, recoil',
           company: '워시스왓(세탁특공대)',
           liveURL: {
             long: '',
@@ -179,7 +179,7 @@ i18n.use(initReactI18next).init({
           title: '성수기 CS 인입률 감소에 기여',
           completed: '2024.04 - 2024.04',
           type: '앱 플랫폼',
-          usingSkills: 'ReactNative, Next',
+          usingSkills: 'ReactNative, Typescript, styled-components, recoil',
           company: '워시스왓(세탁특공대)',
           liveURL: {
             long: '',
